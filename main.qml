@@ -13,11 +13,9 @@ Item {
         color: "lightblue"
     }
 
-    /*El elemento que se escribe luego del primero es el que
-    queda por encima en caso de solapamiento, esto es lo que se
-    conoce como Z Order (mas antes declarado, más bajo en el stack)*/
     Rectangle {
         x: 100 ; y: 120
+        z: -1 // Z Order como propiedad (ahora deja al azul por arriba)
         height: 100
         width: height*2
         color: "green"
