@@ -1,0 +1,14 @@
+import QmlProject 1.0
+
+/*Este archivo luce de manera similar para cada proyecto en
+el que se trabaje sin un backend en C++. En estos últimos
+generalmente no se tendrá un archivo .qmlproject, ya que
+se implementará la lógica en C++*/
+
+Project {
+    mainFile: "main.qml" // Especifica el nombre del QML principal
+
+    QmlFiles {
+        directory: "."
+    }
+}
